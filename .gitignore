@@ -1,0 +1,13 @@
+# PlatformIO
+.pio/
+
+# VS Code
+.vscode/
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
+Thumbs.db
+
+# Configuração local opcional com credenciais
+include/config.local.h

@@ -1,0 +1,20 @@
+name: Build SENTINELA-SOLO
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    name: Compile ESP32 firmware
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup PlatformIO
+        uses: n-vr/setup-platformio-action@v1
+      - name: Build
+        run: pio run
